@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<header>
+	<title>Modelo de cajas</title>
+	<link rel="stylesheet" type="text/css" href="stup.css">
+	</header>
+</head>
+<body>
+	<div class="navbar">
+		<a href="intro.html">Introduccion al CSS</a>
+		<a href="sintaxisbasica.html">sintaxis basica del CSS</a>
+		<a href="ejemploselectores.html">Selectores</a>
+        <a href="propiedadesestilo.html">propiedades de estilos CSS</a>
+        <a href="modelodecajas.html">Modelo de cajas</a>
+
+	</div>
+	<div class="content">
+		<h1>Modelo de cajas</h1>
+       
+		<p> El modelo de caja en CSS es una forma de entender cómo se muestra y se organiza el contenido de una página web. Imagina que cada elemento HTML es como una caja rectangular que encierra su contenido, incluyendo cualquier espacio adicional de relleno, borde y margen. Es como si cada elemento tuviera su propio marco y el modelo de caja describe cómo se muestra este marco en la página.</p>
+		<h2>tipos de propiedades</h2>
+        <ul>
+          <li><mark>width y height: </mark>establecen la anchura y altura de la caja del elemento respectivamente. </li>
+          <br>
+          <li><mark>padding: </mark> define el espacio de relleno dentro del borde de la caja.</li>
+          <br>
+          <li><mark>border: </mark>establece el borde de la caja, que puede ser de diferentes estilos, anchuras y colores.</li>
+          <br>
+          <li><mark>margin:</mark>define el espacio en blanco alrededor del borde de la caja, separando un elemento de otros elementos de la página. </li>
+          <br>
+          
+        </ul>
+        
+        <h1>Ejemplo</h1>
+		<div class="card">
+			<h3>Ejemplo de código HTML </h3>
+			<pre>
+
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                  &lt;head&gt;
+                    &lt;meta charset=&quot;UTF-8&quot;&gt;
+                    &lt;title&gt;Ejemplo de modelo de caja en CSS&lt;/title&gt;
+                  &lt;/head&gt;
+                  &lt;body&gt;
+                    &lt;div&gt;
+                      &lt;p&gt;Contenido del div&lt;/p&gt;
+                    &lt;/div&gt;
+                  &lt;/body&gt;
+                &lt;/html&gt;
+                
+                    
+</pre>
+<h3>Ejemplo de código CSS de la pagina de ejemplo</h3>
+<pre>
+<code>
+    /* Estilo para el div */
+      div {
+        width: 300px;
+        height: 200px;
+        padding: 20px;
+        border: 1px solid black;
+        margin: 50px;
+      }
+				</code>
+			</pre>
+			<h3>Resultado:</h3>
+			
+			<iframe src="ejemmodelocajas.html" width="700px" height="800"></iframe>
+		</div>
+	</div

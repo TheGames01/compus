@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<header>
+	<title>Manual de HTM y CSS</title>
+	<link rel="stylesheet" type="text/css" href="stup.css">
+	</header>
+</head>
+<body>
+	<div class="navbar">
+	<li>
+		<a href="manual2.0.html">Introduccion al CSS</a>
+		<a href="sintaxisbasica.html">Sintaxis basica del css</a>
+		<a href="ejemploselectores.html">Selectores</a>
+		<a href="propiedadesestilo.html">Propiedades de estilo css</a>
+		<a href="modelodecajas.html">Modelo de cajas</a>
+
+
+
+	</li>
+	</div>
+	<div class="content">
+		<h1>introducciion al css</h1>
+		<p> CSS, siglas en inglés de "Cascading Style Sheets", es un lenguaje de estilo utilizado para definir la presentación de una página web. En otras palabras, CSS permite a los diseñadores y desarrolladores controlar el aspecto visual de un sitio web. Con CSS, es posible cambiar el color y tamaño de las fuentes, ajustar los márgenes y espaciados, agregar efectos de animación, crear diseños de página personalizados y mucho más. Una de las principales ventajas de usar CSS es que separa el contenido de una página web de su diseño, lo que significa que los cambios en la apariencia del sitio se pueden hacer sin alterar el contenido en sí. En resumen, CSS es una herramienta esencial para cualquier persona interesada en el diseño web, ya que permite crear sitios web modernos y atractivos con facilidad y eficiencia.</p>
+		<h1>Ejemplo de una pequeña parte de lo que se puede hacer con html y CSS</h1>
+		<div class="card">
+			<h3>Ejemplo de código HTML </h3>
+			<pre>
+			
+(pagina de inicio de sesion)
+
+&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;head&gt;
+  &lt;title&gt;Página de Inicio de Sesión&lt;/title&gt;
+  &lt;link rel="stylesheet" href="social.css"&gt;
+  &lt;link rel="stylesheet" href="stuuuuuuuuuuuuuuuuu.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;div class="container"&gt;
+    &lt;h1&gt;Iniciar Sesión&lt;/h1&gt;
+    &lt;form action="stile.html"&gt;
+      &lt;input type="text" placeholder="Usuario"&gt;
+      &lt;input type="password" placeholder="Contraseña"&gt;
+      &lt;button type="submit"&gt;Iniciar Sesión&lt;/button&gt;
+    &lt;/form&gt;
+  &lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
+				
+</pre>
+<h3>Ejemplo de código CSS de la pagina de ejemplo</h3>
+<pre>
+<code>
+		             body {
+						font-family: Arial, sans-serif;
+						color: #333;
+					  }
+					  
+					  .contenedor {
+						max-width: 1200px;
+						margin: 0 auto;
+						padding: 20px;
+					  }
+					  
+					  /* Estilos de la barra de navegación */
+					  .encabezado {
+						background-color: #000;
+						color: #fff;
+						padding: 10px 0;
+					  }
+					  
+					  .titulo {
+						font-size: 24px;
+						margin-right: auto;
+					  }
+					  
+					  .navegacion {
+						display: flex;
+						align-items: center;
+					  }
+					  
+					  .lista-navegacion {
+						display: flex;
+						list-style-type: none;
+					  }
+					  
+					  .lista-navegacion li {
+						margin-right: 20px;
+					  }
+					  
+					  .lista-navegacion li a {
+						color: #fff;
+						text-decoration: none;
+					  }
+					  
+					  /* Estilos de la sección de inicio */
+					  .seccion-inicio {
+						background-color: #f0f0f0;
+						padding: 60px ;
+						text-align: center;
+					  }
+					  
+					  .subtitulo {
+						font-size: 36px;
+					  }
+					  
+					
+					  
+					  .boton-enlace {
+						display: inline-block;
+						margin-top: 20px;
+						padding: 10px 20px;
+						background-color: #000;
+						color: #fff;
+						text-decoration: none;
+						font-size: 16px;
+						border-radius: 5px;
+					  }
+					  
+					  /* Estilos de la sección de películas */
+					  .seccion-peliculas {
+						padding: 45px ;
+					  }
+					  
+					  .titulo-seccion {
+						font-size: 40px;
+						text-align: center;
+						margin-bottom: 2px;
+					  }
+					  
+					  .peliculas-container {
+						display: grid;
+						grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+						gap: 20px;
+					  }
+					  
+					  .pelicula {
+						border: 1px solid #ccc;
+						border-radius: 5px;
+						padding: 20px;
+					  }
+					  
+				</code>
+			</pre>
+			<h3>Resultado:</h3>
+			
+			<iframe src="peliculas/index.html" width="700px" height="800"></iframe>
+		</div>
+	</div

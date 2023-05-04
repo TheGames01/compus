@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<header>
+	<title>Propiedades</title>
+	<link rel="stylesheet" type="text/css" href="stup.css">
+	</header>
+</head>
+<body>
+	<div class="navbar">
+		<a href="manual2.0.html">Introduccion al CSS</a>
+		<a href="sintaxisbasica.html">sintaxis basica del CSS</a>
+		<a href="ejemploselectores.html">Selectores</a>
+        <a href="propiedadesestilo.html">propiedades de estilos CSS</a>
+        <a href="modelodecajas.html">Modelo de cajas</a>
+
+	</div>
+	<div class="content">
+		<h1>Propiedades de estilo en css</h1>
+       
+		<p> Una propiedad de estilo en CSS es una instrucción que se utiliza para definir cómo se debe mostrar un elemento HTML en una página web. Las propiedades de estilo en CSS se utilizan para cambiar aspectos visuales de los elementos HTML, como su color, tamaño, posición, fuente y muchas otras características.</p>
+		<h2>tipos de propiedades</h2>
+        <ul>
+          <li><mark>background-color: </mark>Esta propiedad se utiliza para definir el color de fondo de un elemento. </li>
+          <br>
+          <li><mark>color: </mark>Esta propiedad se utiliza para definir el color del texto dentro de un elemento.    </li>
+          <br>
+          <li><mark>font-size:</mark> Esta propiedad se utiliza para definir el tamaño de la fuente de texto dentro de un elemento.</li>
+          <br>
+          <li><mark>text-align:</mark> Esta propiedad se utiliza para definir la alineación del texto dentro de un elemento. </li>
+          <br>
+          <li> <mark>padding: </mark>Esta propiedad se utiliza para definir el espacio entre el borde de un elemento y su contenido.</li>
+          <br>
+          <li> <mark>margin:</mark> Esta propiedad se utiliza para definir el espacio entre un elemento y los elementos adyacentes.</li>
+          <br>
+          <li><mark>border:</mark> Esta propiedad se utiliza para definir el borde de un elemento, incluyendo su ancho, estilo y color.</li>
+          <br>
+          <li><mark>display: </mark>Esta propiedad se utiliza para definir cómo se muestra un elemento en la página, por ejemplo, como un bloque o como un elemento en línea.</li>
+          <br>
+          <li><mark>position:</mark> Esta propiedad se utiliza para definir la posición de un elemento en la página, por ejemplo, si debe ser fijo o relativo.</li>
+          
+        </ul>
+        
+        <h1>Ejemplo</h1>
+		<div class="card">
+			<h3>Ejemplo de código HTML </h3>
+			<pre>
+
+                &lt;!DOCTYPE html&gt;
+                &lt;html&gt;
+                &lt;head&gt;
+                    &lt;title&gt;Mi página con propiedades CSS&lt;/title&gt;
+                
+                
+                &lt;/head&gt;
+                &lt;body&gt;
+                    &lt;header&gt;
+                        &lt;h1&gt;Mi página con propiedades CSS&lt;/h1&gt;
+                        &lt;nav&gt;
+                            &lt;ul&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;Inicio&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;Acerca de&lt;/a&gt;&lt;/li&gt;
+                                &lt;li&gt;&lt;a href="#"&gt;Contacto&lt;/a&gt;&lt;/li&gt;
+                            &lt;/ul&gt;
+                        &lt;/nav&gt;
+                    &lt;/header&gt;
+                    &lt;main&gt;
+                        &lt;section&gt;
+                            &lt;h2&gt;Sección 1&lt;/h2&gt;
+                            &lt;p&gt;Este es el contenido de la sección 1.&lt;/p&gt;
+                        &lt;/section&gt;
+                        &lt;section&gt;
+                            &lt;h2&gt;Sección 2&lt;/h2&gt;
+                            &lt;p&gt;Este es el contenido de la sección 2.&lt;/p&gt;
+                        &lt;/section&gt;
+                    &lt;/main&gt;
+                    &lt;footer&gt;
+                        &lt;p&gt;Derechos reservados &amp;copy; 2023&lt;/p&gt;
+                    &lt;/footer&gt;
+                &lt;/body&gt;
+                &lt;/html&gt;
+                    
+</pre>
+<h3>Ejemplo de código CSS de la pagina de ejemplo</h3>
+<pre>
+<code>
+    body {
+        background-color: #f2f2f2; /*Fondo de color gris claro*/
+        color: #333; /*Color de fuente negro*/
+        font-family: Arial, sans-serif; /*Fuente principal Arial o una fuente sans-serif*/
+        font-size: 16px; /*Tamaño de fuente de 16 píxeles*/
+        margin: 0; /*Eliminar margen predeterminado del body*/
+        padding: 0; /*Eliminar relleno predeterminado del body*/
+    }
+    
+    header {
+        background-color: #333; /*Fondo de color negro*/
+        color: #fff; /*Color de fuente blanco*/
+        padding: 10px; /*Añadir un relleno de 10 píxeles a la parte superior e inferior del encabezado*/
+    }
+    
+    h1 {
+        margin: 0; /*Eliminar margen predeterminado del encabezado h1*/
+    }
+    
+    nav ul {
+        margin: 0; /*Eliminar margen predeterminado de la lista de navegación*/
+        padding: 0; /*Eliminar relleno predeterminado de la lista de navegación*/
+        list-style: none; /*Eliminar el estilo de viñetas de la lista de navegación*/
+    }
+    
+    nav ul li {
+        display: inline-block; /*Mostrar los elementos de la lista de navegación en línea*/
+        margin-right: 20px; /*Agregar un margen derecho de 20 píxeles entre los elementos de la lista de navegación*/
+    }
+    
+    nav ul li:last-child {
+        margin-right: 0; /*Eliminar el margen derecho del último elemento de la lista de navegación*/
+    }
+    
+    nav ul li a {
+        color: #fff; /*Color de enlace blanco*/
+        text-decoration: none; /*Eliminar subrayado del enlace*/
+    }
+    
+    main {
+        max-width: 800px; /*Establecer el ancho máximo de la sección principal a 800 píxeles*/
+        margin: 0 auto; /*Centrar horizontalmente la sección principal en su contenedor*/
+        padding: 20px; /*Agregar un relleno de 20 píxeles a la sección principal*/
+    }
+    
+    section {
+        margin-bottom: 20px; /*Agregar un margen inferior de 20 píxeles a cada sección*/
+        padding: 10px; /*Agregar un relleno de 10 píxeles a cada sección*/
+        background-color: #fff; /*Fondo de color blanco para cada sección*/
+        border: 1px solid #ccc; /*Agregar un borde de 1 píxel sólido de color gris claro alrededor de cada sección*/
+        box-shadow: 2px 2px 2px rgba(0,0,0,0.1); /*Agregar una sombra suave a cada sección*/
+    }
+    
+    h2 {
+        margin-top: 0; /*Eliminar el margen superior predeterminado del encabezado h2*/
+    }
+    
+    footer {
+        background-color: #333; /*Fondo de color negro*/
+        color: #fff; /*Color de fuente blanco*/
+        padding: 10px; /*Agregar un relleno de 10 píxeles al pie de página*/
+        text-align: center; /*Centrar el texto en el pie de página*/
+    }
+    
+
+				</code>
+			</pre>
+			<h3>Resultado:</h3>
+			
+			<iframe src="ejemplopropiedades.html" width="700px" height="800"></iframe>
+		</div>
+	</div

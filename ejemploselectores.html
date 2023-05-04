@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<header>
+	<title>Selectores</title>
+	<link rel="stylesheet" type="text/css" href="stup.css">
+	</header>
+</head>
+<body>
+	<div class="navbar">
+		<a href="manual2.0.html">Introduccion al CSS</a>
+		<a href="sintaxisbasica.html">sintaxis basica del CSS</a>
+		<a href="ejemploselectores.html">Selectores</a>
+		<a href="propiedadesestilo.html">propiedade estilos CSS</a>
+
+	</div>
+	<div class="content">
+		<h1>Selectores</h1>
+       
+		<p> Los selectores en CSS son una herramienta poderosa para los desarrolladores web, y conocer su funcionamiento y variedad puede ayudar a mejorar la eficiencia y calidad del código CSS.
+
+			En este artículo, exploraremos los diferentes tipos de selectores en CSS, desde los selectores básicos de elementos y clases, hasta los selectores más avanzados de pseudoclase y combinados.
+			
+			Ya sea que seas un desarrollador principiante o experimentado, este artículo te proporcionará una guía completa y detallada sobre cómo usar los selectores en CSS para mejorar el diseño y la funcionalidad de tu sitio web.</p>
+		
+		<h2>selector de atributo</h3>
+		<p> Los selectores de atributo son una forma de seleccionar elementos HTML basados en sus atributos. Se utilizan en CSS para aplicar estilos a elementos específicos que cumplen con ciertas condiciones en su atributo.</p>
+		<br>
+		<p>Por ejemplo, si quieres seleccionar todos los elementos &lt;a&gt; que tengan el atributo href, puedes utilizar el selector de atributo a[href]. Si deseas seleccionar todos los elementos &lt;input&gt; que tengan el atributo type con el valor "text", puedes utilizar el selector de atributo input[type="text"].</p>
+		<h2>Selector hijo directo</h3>
+		<p>Un selector de hijo directo se utiliza para seleccionar solamente los elementos que son hijos directos de otro elemento. Es decir, si tienes un elemento que contiene otros elementos dentro de él, el selector de hijo directo te permitirá seleccionar solo los elementos que son hijos directos directamente dentro del elemento padre, excluyendo cualquier otro elemento que esté anidado más profundamente.</p>
+		
+		<h2>selector de pseudoclases</h3>
+		<p>Una pseudoclase se escribe después del selector y se indica con dos puntos (:) antes del nombre de la pseudoclase. Por ejemplo, el selector botton:hover seleccionará todos los btones (&lt;button&gt;) cuando se coloca el cursor sobre ellos.</p>
+		
+		<div class="card">
+			<h3>Ejemplo de código HTML </h3>
+			<pre>
+
+	&lt;!DOCTYPE html&gt;
+	&lt;html&gt;
+	&lt;head&gt;
+	&lt;title&gt;Ejemplo de Selectores Nivel Medio&lt;/title&gt;
+					
+	&lt;/head&gt;
+	&lt;body&gt;
+		&lt;h1&gt;Selector de Atributos&lt;/h1&gt;
+		&lt;p&gt;Este es un párrafo con un &lt;a href=&quot;https://www.ejemplo.com&quot;&gt;enlace&lt;/a&gt; a otro sitio web.&lt;/p&gt;
+				
+		&lt;h1&gt;Selector de Hijos Directos&lt;/h1&gt;
+		&lt;ul&gt;
+	    	&lt;li&gt;Elemento 1&lt;/li&gt;
+			&lt;li&gt;Elemento 2&lt;/li&gt;
+			&lt;li&gt;Elemento 3&lt;/li&gt;
+		&lt;/ul&gt;
+				
+		&lt;h1&gt;Selector de Pseudoclases&lt;/h1&gt;
+			&lt;button&gt;Botón&lt;/button&gt;
+	&lt;/body&gt;
+    &lt;/html&gt;
+				
+</pre>
+<h3>Ejemplo de código CSS de la pagina de ejemplo</h3>
+<pre>
+<code>
+    /* Selector de Atributos */
+    a[href] {
+        color: blue;
+        text-decoration: underline;
+    }
+    
+    /* Selector de Hijos Directos */
+    ul > li {
+        font-weight: bold;
+    }
+    
+    
+    /* Selector de Pseudoclases */
+    button:hover {
+        background-color: gray;
+    }  
+</code>
+			</pre>
+			<h3>Resultado:</h3>
+			
+			<iframe src="selector.html" width="700px" height="800"></iframe>
+		</div>
+	</div

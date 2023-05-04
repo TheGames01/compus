@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<header>
+	<title>Selectores</title>
+	<link rel="stylesheet" type="text/css" href="stup.css">
+	</header>
+</head>
+<body>
+	<div class="navbar">
+    <a href="manual2.0.html">Introduccion al CSS</a>
+		<a href="sintaxisbasica.html">Sintaxis basica del css</a>
+		<a href="ejemploselectores.html">Selectores</a>
+		<a href="propiedadesestilo.html">Propiedades de estilo css</a>
+		<a href="modelodecajas.html">Modelo de cajas</a>
+
+
+	</div>
+	<div class="content">
+		<h1>Selectores</h1>
+       
+		<p> La sintaxis de CSS es el conjunto de reglas que definen cómo escribir código en CSS. Estas reglas definen cómo se deben estructurar las reglas de estilo y cómo se deben combinar los selectores, propiedades y valores para producir un diseño coherente en una página web.</p>
+		<h1>Ejemplo de como funciona el CSS</h1>
+		<div class="card">
+			<h3>Ejemplo de código HTML </h3>
+			<pre>
+
+&lt;html&gt;
+  &lt;head&gt;
+    &lt;title&gt;Ejemplo de CSS&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;!-- Aquí utilizamos el selector h1 y la propiedad color definidos en el CSS --&gt;
+    &lt;h1&gt;Este es un encabezado&lt;/h1&gt;
+    &lt;p&gt;Este es un párrafo.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;		
+</pre>
+<h3>Ejemplo de código CSS de la pagina de ejemplo</h3>
+<pre>
+<code>
+    /* Selector de Atributos */
+    a[href] {
+        color: blue;
+        text-decoration: underline;
+    }
+    
+    /* Selector de Hijos Directos */
+    ul > li {
+        font-weight: bold;
+    }
+    
+    /* Selector de Hermanos Adyacentes */
+    h2 + p {
+        color: red;
+    }
+    
+    /* Selector de Hermanos Generales */
+    h2 ~ p {
+        font-style: italic;
+    }
+    
+    /* Selector de Pseudoclases */
+    button:hover {
+        background-color: gray;
+    }  
+</code>
+			</pre>
+			<h3>Resultado:</h3>
+			
+			<iframe src="selector.html" width="700px" height="800"></iframe>
+		</div>
+	</div
